@@ -1,0 +1,25 @@
+/* Add any custom styles here */
+
+.text-green-500 {
+    color: #43BA7F;
+}
+
+.bg-green-500 {
+    background-color: #43BA7F;
+}
+
+.bg-green-100 {
+    background-color: #D1FAE5;
+}
+
+.border-green-500 {
+    border-color: #43BA7F;
+}
+
+.hover\:bg-green-600:hover {
+    background-color: #369466;
+}
+
+.hover\:text-green-500:hover {
+    color: #43BA7F;
+}

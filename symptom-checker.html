@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker - MediAId</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md relative z-10">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold text-gray-800">
+                        <img src="./assets/images/logo.svg" alt="MediAId Logo" class="h-8">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-green-500">Home</a>
+                    <a href="index.html#about-us" class="text-gray-600 hover:text-green-500">About</a>
+                    <a href="doctors.html" class="text-gray-600 hover:text-green-500">Doctors</a>
+                    <a href="symptom-checker.html" class="text-gray-600 hover:text-green-500">Symptom Checker</a>
+                    <a href="upload-prescription.html" class="text-gray-600 hover:text-green-500">Prescription Analysis</a>
+                </div>
+                <div id="signin-signup-button" class="hidden md:flex items-center">
+                </div>
+                <div class="md:hidden">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500 hover:text-green-500" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="hidden mobile-menu">
+                <a href="index.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-200">Home</a>
+                <a href="index.html#about-us" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-200">About</a>
+                <a href="doctors.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-200">Doctors</a>
+                <a href="symptom-checker.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-200">Symptom Checker</a>
+                <a href="upload-prescription.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-200">Prescription Analysis</a>
+                <a href="signin.html" class="block py-2 px-4 text-sm text-white bg-green-500 rounded-md hover:bg-green-600">Sign In/Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Symptom Analysis Section -->
+    <section class="py-16 bg-green-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800">Symptom Analysis</h2>
+                <p class="text-gray-600 mt-4">Home / Services</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <img src="assets/images/service.svg" alt="Symptom Analysis" class="mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800">Check Your Symptoms & Get Instant First-Aid or Doctor Guidance</h2>
+                    <p class="mt-4 text-gray-600">Not sure what's wrong? Just tell us your symptoms—our smart AI will instantly suggest safe first-aid steps. If your condition needs professional care, we'll recommend the right doctors based on your symptoms, including their contact info, visiting hours, and specialization. Quick, reliable help starts here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <textarea id="symptoms" name="symptoms" rows="6" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Write your symptoms...."></textarea>
+                </div>
+                <div class="flex items-center justify-center space-x-4">
+                    <button id="suggest-first-aid" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-md focus:outline-none focus:shadow-outline">
+                        First Aid
+                    </button>
+                    <button id="suggest-doctors" class="border border-green-500 text-green-500 font-bold py-3 px-6 rounded-md hover:bg-green-500 hover:text-white focus:outline-none focus:shadow-outline">
+                        Doctor Recommendation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="bg-green-500 rounded-lg p-12 text-center text-white">
+                <h2 class="text-3xl md:text-4xl font-bold">Get Appointment For Your Medical Service</h2>
+                <a href="appointment.html" class="mt-8 inline-block bg-white text-green-500 font-bold py-3 px-6 rounded-md hover:bg-gray-200">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="./assets/images/logowhite.svg" alt="MediAId Logo" class="h-12">
+                    <p class="mt-4">Empowering wellness through knowledge and care</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Menu</h4>
+                    <ul>
+                        <li><a href="index.html" class="hover:text-green-500">Home</a></li>
+                        <li><a href="index.html#about-us" class="hover:text-green-500">About</a></li>
+                        <li><a href="doctors.html" class="hover:text-green-500">Doctors</a></li>
+                        <li><a href="symptom-checker.html" class="hover:text-green-500">Symptom Checker</a></li>
+                        <li><a href="upload-prescription.html" class="hover:text-green-500">Prescription Analysis</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul>
+                        <li><a href="#" class="hover:text-green-500">Symptom Analysis</a></li>
+                        <li><a href="#" class="hover:text-green-500">Doctor Suggestion</a></li>
+                        <li><a href="#" class_="hover:text-green-500">Doctor Appointment</a></li>
+                        <li><a href="#" class="hover:text-green-500">Prescription Analysis</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <p>House no 16, Road no 02, Satmoshjid Housing, Mohammodpur, Dhaka.</p>
+                    <p>contact@mediaid.com</p>
+                    <p>+8801729307226</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2025 MediAId. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/symptom-checker.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>
